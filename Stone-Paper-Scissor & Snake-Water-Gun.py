@@ -2,8 +2,8 @@
 from random import randint
 from time import sleep
 
-# NTRC = Number To RealChosen
-def NTRC(game, cn):
+# CNV = Chosen Number to Value
+def CNV(game, cn):
     if game == 1:
         if cn == 1:
              return 'stone'
@@ -60,8 +60,8 @@ def play(game_no):
         player = int(player)
 
         # Printing that who has chosen what
-        print("\nYour choice is", NTRC(game_no, player))
-        print("Computer's choice is", NTRC(game_no, comp))
+        print("\nYour choice is", CNV(game_no, player))
+        print("Computer's choice is", CNV(game_no, comp))
 
         # Cases
         # Player's choice and computer's choice when same
@@ -103,8 +103,8 @@ def play(game_no):
         player = int(player)
 
         # Printing that who has chosen what
-        print("\nYour choice is", NTRC(game_no, player))
-        print("Computer's choice is", NTRC(game_no, comp))
+        print("\nYour choice is", CNV(game_no, player))
+        print("Computer's choice is", CNV(game_no, comp))
 
         # Cases
         # Player's choice and computer's choice when same
